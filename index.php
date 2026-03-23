@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['action'])) {
             break;
         case 'divide':
             if ($num2 == 0) {
-                $error = "⚠️ Деление на ноль невозможно!";
+                $error = "Деление на ноль невозможно!";
             } else {
                 $result = $num1 / $num2;
             }
