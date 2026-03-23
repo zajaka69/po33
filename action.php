@@ -13,3 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors[] = "Некорректный формат Email";
     }
+   // Валидация пароля
+    if (empty($password)) {
+        $errors[] = "Поле Пароль обязательно для заполнения";
+    } elseif (strlen($password) < 6) {
+        $errors[] = "Пароль должен содержать минимум 6 символов";
+    }
