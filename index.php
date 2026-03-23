@@ -18,3 +18,16 @@
         <label>Пароль:
             <input type="password" name="password" required minlength="6">
         </label><br>
+               <label>Пол:
+            <select name="gender" required>
+                <option value="">Выберите пол</option>
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+                <option value="other">Другой</option>
+            </select>
+        </label><br>
+        
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</body>
+</html>
